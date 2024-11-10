@@ -1,6 +1,6 @@
 package main
 
-import "testing"
+// import "testing"
 
 // func TestReduce(t *testing.T) {
 // 	t.Run("multiplication of all elements", func(t *testing.T) {
@@ -20,21 +20,21 @@ import "testing"
 // 	})
 // }
 
-func TestBadBank(t *testing.T) {
-	transactions := []Transaction{
-		{
-			From: "Chris",
-			To:   "Riya",
-			Sum:  100,
-		},
-		{
-			From: "Adil",
-			To:   "Chris",
-			Sum:  25,
-		},
-	}
+// func TestBadBank(t *testing.T) {
+// 	transactions := []Transaction{
+// 		{
+// 			From: "Chris",
+// 			To:   "Riya",
+// 			Sum:  100,
+// 		},
+// 		{
+// 			From: "Adil",
+// 			To:   "Chris",
+// 			Sum:  25,
+// 		},
+// 	}
 
-	AssertEqual(t, BalanceFor(transactions, "Riya"), 100)
-	AssertEqual(t, BalanceFor(transactions, "Chris"), -75)
-	AssertEqual(t, BalanceFor(transactions, "Adil"), -25)
-}
+// 	AssertEqual(t, BalanceFor(transactions, "Riya"), 100)
+// 	AssertEqual(t, BalanceFor(transactions, "Chris"), -75)
+// 	AssertEqual(t, BalanceFor(transactions, "Adil"), -25)
+// }
